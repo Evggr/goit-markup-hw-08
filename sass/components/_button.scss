@@ -1,0 +1,25 @@
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-color: transparent;
+    border-radius: 4px;
+    text-align: center;
+    padding: 6px 22px;
+  
+    font-family: inherit;
+    background-color: var(--team-background-color);
+    font-size: 16px;
+    line-height: 1.62;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
+  }
+  
+  
