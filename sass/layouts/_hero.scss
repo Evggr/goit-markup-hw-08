@@ -1,60 +1,85 @@
-.hero {
+.overlay {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  background-color: var(--hero-background-color);
+  background-image:
+  var(--bg-gradient),
+  url(/images/bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 118px 0 118px 0;
+  text-align: center;
+  @include retina{
+    background-image:var(--bg-gradient), url(/images/bg-mob-2x.jpg);
+  }
+
+  @include tablet {
+  background-image: 
+  var(--bg-gradient),
+  url(/images/bg-tab.jpg);
+
+  @include retina {
+  background-image:var(--bg-gradient), url(/images/bg-tab-2x.jpg);
+    }
+  }
+
+  @include desktop {
     padding: 200px 0 200px 0;
-  
-    background-color: var(--hero-background-color);
-    text-align: center;
+    background-image:
+    var(--bg-gradient),
+    url(/images/Img\ hero\ .jpg);
+    
+    @include retina{
+background-image: var(--bg-gradient), url(/images/bg-desktop-2x.jpg);
+    }
   }
-  .overlay {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/Img\ hero\ .jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .hero__title {
-    margin: 0 auto;
-    margin-bottom: 30px;
+}
+
+.hero__title {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 360px;
+
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @include desktop {
     max-width: 696px;
-  
-    color: var(--hero-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
+}
 
-  .hero__button {
-    display: inline-block;
-    min-width: 216px;
-    border: 1px solid transparent;
-    border-color: transparent;
-    border-radius: 4px;
-    padding: 10px 32px;
-  
-    text-align: center;
-    font-family: inherit;
-    background-color: var(--accent-color);
-    color: var(--hero-text-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    text-decoration: none;
-    transition: var(--timing-function);
+.hero__button {
+  display: inline-block;
+  min-width: 216px;
+  border: 1px solid transparent;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
 
-    &:hover,
-    &:focus {
-        background-color: var(--hover-hero-button);
-      }
+  text-align: center;
+  font-family: inherit;
+  background-color: var(--accent-color);
+  color: var(--hero-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-hero-button);
   }
-  
+}

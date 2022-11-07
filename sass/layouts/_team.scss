@@ -4,15 +4,27 @@
 }
 
 .team .list {
-  display: flex;
+display: flex;
+  flex-wrap: wrap;
+  // margin-right: -30px;
+  gap: 30px;
 }
 
 .team .card {
   background-color: var(--team-background-color);
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  width: 100%;
+  
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .team .card {

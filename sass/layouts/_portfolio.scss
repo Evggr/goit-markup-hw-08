@@ -7,9 +7,10 @@
   justify-content: center;
   margin-bottom: 50px;
 
-  & .item:not(:last-child) {
-    margin-right: 8px;
-  }
+  // & .item:not(:last-child) {
+  //   margin-right: 8px;
+  // }
+  gap: 8px;
 }
 
 .filters-title {
@@ -73,4 +74,16 @@
   .portfolio-card:hover & {
     transform: translateY(0);
   }
+}
+
+.portfolio-card {
+  width: 100%;
+  
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
 }
