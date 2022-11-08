@@ -18,13 +18,19 @@
   </head>
 
   <body class="body">
-
-    <!-- <header class="header">
+    <header class="header">
       <div class="container main-nav">
         <nav class="navigation">
           <a href="./index.html" lang="en" class="logo"
-            >Web<span class="logo-header">Studio</span></a
-          >
+            >Web<span class="logo-header">Studio</span>
+          </a>
+
+          <button type="button" class="menu-open-btn">
+            <svg class="menu-open-icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link current">Студія</a>
@@ -54,15 +60,68 @@
           </li>
         </ul>
       </div>
-    </header> -->
+
+      <div class="mob-menu">
+
+        <div class="mob-container">
+         <div class="mob-menu-top">
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-open-icon" width="19" height="19">
+              <use href="./images/symbol-defs.svg#icon-close-black">
+              </use>
+            </svg>
+          </button>
+          
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link current">Студія</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="mob-menu-link">Портфоліо</a>
+            </li>
+            <li class="mob-menu-item"><a href="#" class="mob-menu-link">Контакти</a></li>
+          </ul>
+         </div>
+          
+          <div class="mob-menu-bottom">
+            <div class="mob-contacts">
+              <ul class="mob-contacts-nav list">
+                <li class="mob-contacts-smartphone-item item">
+                  <a class="mob-tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mob-contacts-mail-item item">
+                  <a class="mob-mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+            
+              <ul class="mob-social-list list">
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link">Instagram</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link">Twitter</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link">Facebook</a>
+                </li>
+                <li class="mob-social-item">
+                  <a href="" class="mob-social-link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Секція герой-->
 
       <section class="hero section overlay">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+        <button type="button" class="hero__button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
-      
 
       <section class="benefits section">
         <div class="container">
@@ -128,39 +187,44 @@
             <li class="item">
               <div class="cover-text">
                 <img
-                srcset="
-              ./images/team-images/desk-apps.jpg 1x, 
-              ./images/team-images/desk-apps-2x.jpg 2x"
-                src="./images/img1.jpg"
-                alt="Працівник пише код на комп'ютері."
-                width="370"
-              />
-              <p class="top-text">Десктопні додатки</p>
-            </div>
+                  srcset="
+                    ./images/team-images/desk-apps.jpg    1x,
+                    ./images/team-images/desk-apps-2x.jpg 2x
+                  "
+                  src="./images/img1.jpg"
+                  alt="Працівник пише код на комп'ютері."
+                  width="370"
+                />
+                <p class="top-text">Десктопні додатки</p>
+              </div>
             </li>
             <li class="item">
               <div class="cover-text">
                 <img
-                srcset="
-              ./images/team-images/mob-apps.jpg 1x, 
-              ./images/team-images/mob-apps-2x.jpg 2x"
-                src="./images/img2.jpg"
-                alt="Працівник займаться мобільним програмуванням."
-                width="370"
-              />
-              <p class="top-text">Мобільні додатки</p></div>    
+                  srcset="
+                    ./images/team-images/mob-apps.jpg    1x,
+                    ./images/team-images/mob-apps-2x.jpg 2x
+                  "
+                  src="./images/img2.jpg"
+                  alt="Працівник займаться мобільним програмуванням."
+                  width="370"
+                />
+                <p class="top-text">Мобільні додатки</p>
+              </div>
             </li>
             <li class="item">
               <div class="cover-text">
                 <img
-                srcset="
-              ./images/team-images/design-decision.jpg 1x, 
-              ./images/team-images/design-decision-2x.jpg 2x"
-                src="./images/img3.jpg"
-                alt="Працівник вибирає колір на палітрі кольорів."
-                width="370"
-              />
-              <p class="top-text">Дизайнерські рішення</p></div>
+                  srcset="
+                    ./images/team-images/design-decision.jpg    1x,
+                    ./images/team-images/design-decision-2x.jpg 2x
+                  "
+                  src="./images/img3.jpg"
+                  alt="Працівник вибирає колір на палітрі кольорів."
+                  width="370"
+                />
+                <p class="top-text">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -172,28 +236,37 @@
           <ul class="list">
             <li class="card">
               <picture>
-                <source srcset="
-              ./images/team-images/igordem-desk.jpg 1x, 
-              ./images/team-images/igordem-desk-2x.jpg 2x"
-              media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team-images/igordem-desk.jpg    1x,
+                    ./images/team-images/igordem-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
 
-                <source srcset="
-              ./images/team-images/igordem-tab.jpg 1x, 
-              ./images/team-images/igordem-tab-2x.jpg 2x"
-              media="(min-width:768px)">
+                <source
+                  srcset="
+                    ./images/team-images/igordem-tab.jpg    1x,
+                    ./images/team-images/igordem-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
 
-                <source srcset="
-              ./images/team-images/igordem-mob.jpg 1x, 
-              ./images/team-images/igordem-mob-2x.jpg 2x"
-              media="(max-width:767px)">
-              <img
-                class="photo"
-                src="./images/ihord.jpg"
-                width="450"
-                alt="Ігор Дем'яненко"
-              />
+                <source
+                  srcset="
+                    ./images/team-images/igordem-mob.jpg    1x,
+                    ./images/team-images/igordem-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/ihord.jpg"
+                  width="450"
+                  alt="Ігор Дем'яненко"
+                />
               </picture>
-              
+
               <h3 class="title">Ігор Дем'яненко</h3>
               <p lang="en" class="text">Product Designer</p>
 
@@ -229,27 +302,36 @@
               </ul>
             </li>
             <li class="card">
-               <picture>
-                <source srcset="
-              ./images/team-images/olharep-desk.jpg 1x, 
-              ./images/team-images/olharep-desk-2x.jpg 2x"
-              media="(min-width:1200px)">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-images/olharep-desk.jpg    1x,
+                    ./images/team-images/olharep-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
 
-                <source srcset="
-              ./images/team-images/olharep-tab.jpg 1x, 
-              ./images/team-images/olharep-tab-2x.jpg 2x"
-              media="(min-width:768px)">
+                <source
+                  srcset="
+                    ./images/team-images/olharep-tab.jpg    1x,
+                    ./images/team-images/olharep-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
 
-                <source srcset="
-              ./images/team-images/olharep-mob.jpg 1x, 
-              ./images/team-images/olharep-mob-2x.jpg 2x"
-              media="(max-width:767px)">
-              <img
-                class="photo"
-                src="./images/olharep.jpg"
-                width="450"
-                alt="Ольга Рєпіна"
-              />
+                <source
+                  srcset="
+                    ./images/team-images/olharep-mob.jpg    1x,
+                    ./images/team-images/olharep-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/olharep.jpg"
+                  width="450"
+                  alt="Ольга Рєпіна"
+                />
               </picture>
               <h3 class="title">Ольга Рєпіна</h3>
               <p lang="en" class="text">Frontend Developer</p>
@@ -286,28 +368,37 @@
             </li>
             <li class="card">
               <picture>
-                <source srcset="
-              ./images/team-images/mykolatar-desk.jpg 1x, 
-              ./images/team-images/mykolatar-desk-2x.jpg 2x"
-              media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team-images/mykolatar-desk.jpg    1x,
+                    ./images/team-images/mykolatar-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
 
-                <source srcset="
-              ./images/team-images/mykolatar-tab.jpg 1x, 
-              ./images/team-images/mykolatar-tab-2x.jpg 2x"
-              media="(min-width:768px)">
+                <source
+                  srcset="
+                    ./images/team-images/mykolatar-tab.jpg    1x,
+                    ./images/team-images/mykolatar-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
 
-                <source srcset="
-              ./images/team-images/mykolatar-mob.jpg 1x, 
-              ./images/team-images/mykolatar-mob-2x.jpg 2x"
-              media="(max-width:767px)">
-              <img
-                class="photo"
-                src="./images/mykolatarasov.jpg"
-                width="450"
-                alt="Микола Тарасов"
-              />
+                <source
+                  srcset="
+                    ./images/team-images/mykolatar-mob.jpg    1x,
+                    ./images/team-images/mykolatar-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/mykolatarasov.jpg"
+                  width="450"
+                  alt="Микола Тарасов"
+                />
               </picture>
-              
+
               <h3 class="title">Микола Тарасов</h3>
               <p lang="en" class="text">Marketing</p>
               <ul class="social-link-list list">
@@ -343,32 +434,40 @@
             </li>
             <li class="card">
               <picture>
-                <source srcset="
-              ./images/team-images/myhailoerm-desk.jpg 1x, 
-              ./images/team-images/myhailoerm-desk-2x.jpg 2x"
-              media="(min-width:1200px)">
+                <source
+                  srcset="
+                    ./images/team-images/myhailoerm-desk.jpg    1x,
+                    ./images/team-images/myhailoerm-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
 
-                <source srcset="
-              ./images/team-images/myhailoerm-tab.jpg 1x, 
-              ./images/team-images/myhailoerm-tab-2x.jpg 2x"
-              media="(min-width:768px)">
+                <source
+                  srcset="
+                    ./images/team-images/myhailoerm-tab.jpg    1x,
+                    ./images/team-images/myhailoerm-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
 
-                <source srcset="
-              ./images/team-images/myhailoerm-mob.jpg 1x, 
-              ./images/team-images/myhailoerm-mob-2x.jpg 2x"
-              media="(max-width:767px)">
-             <img
-                class="photo"
-                src="./images/myhailojerm.jpg"
-                width="450"
-                alt="Михайло Єрмаков"
-              />
+                <source
+                  srcset="
+                    ./images/team-images/myhailoerm-mob.jpg    1x,
+                    ./images/team-images/myhailoerm-mob-2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./images/myhailojerm.jpg"
+                  width="450"
+                  alt="Михайло Єрмаков"
+                />
               </picture>
 
               <h3 class="title">Михайло Єрмаков</h3>
               <p lang="en" class="text">UI Designer</p>
               <ul class="social-link-list list">
-                
                 <li class="social-link-item">
                   <a class="social-link link" href="">
                     <svg class="social-link-icon" width="20" height="20">
