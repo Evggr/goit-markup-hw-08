@@ -599,7 +599,7 @@ background-repeat: no-repeat;
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--hero-background-color);
-  background-image: var(--bg-gradient), url(/images/bg-mob.jpg);
+  background-image: var(--bg-gradient), url(../images/bg-tab-2x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -608,28 +608,28 @@ background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: var(--bg-gradient), url(/images/bg-mob-2x.jpg);
+    background-image: var(--bg-gradient), url(../images/bg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: var(--bg-gradient), url(/images/bg-tab.jpg);
+    background-image: var(--bg-gradient), url(../images/bg-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: var(--bg-gradient), url(/images/bg-tab-2x.jpg);
+    background-image: var(--bg-gradient), url(../images/bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
     padding: 200px 0 200px 0;
-    background-image: var(--bg-gradient), url(/images/hero.jpg);
+    background-image: var(--bg-gradient), url(../images/hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: var(--bg-gradient), url(/images/bg-desktop-2x.jpg);
+    background-image: var(--bg-gradient), url(../images/bg-desktop-2x.jpg);
   }
 }
 

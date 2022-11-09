@@ -5,23 +5,27 @@
   background-color: var(--hero-background-color);
   background-image:
   var(--bg-gradient),
-  url(/images/bg-mob.jpg);
+  url(../images/bg-tab-2x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 118px 0 118px 0;
   text-align: center;
   @include retina{
-    background-image:var(--bg-gradient), url(/images/bg-mob-2x.jpg);
+    background-image:
+    var(--bg-gradient), 
+    url(../images/bg-mob-2x.jpg);
   }
 
   @include tablet {
   background-image: 
   var(--bg-gradient),
-  url(/images/bg-tab.jpg);
+  url(../images/bg-tab.jpg);
 
   @include retina {
-  background-image:var(--bg-gradient), url(/images/bg-tab-2x.jpg);
+  background-image:
+  var(--bg-gradient), 
+  url(../images/bg-tab-2x.jpg);
     }
   }
 
@@ -29,10 +33,12 @@
     padding: 200px 0 200px 0;
     background-image:
     var(--bg-gradient),
-    url(/images/hero.jpg);
+    url(../images/hero.jpg);
     
     @include retina{
-background-image: var(--bg-gradient), url(/images/bg-desktop-2x.jpg);
+background-image: 
+var(--bg-gradient), 
+url(../images/bg-desktop-2x.jpg);
     }
   }
 }
