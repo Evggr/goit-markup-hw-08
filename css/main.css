@@ -426,9 +426,15 @@ background-repeat: no-repeat;
 }
 
 .menu-open-btn {
+  display: block;
   margin-left: 276px;
-  border-color: transparent;
-  background-color: #fff;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -442,13 +448,24 @@ background-repeat: no-repeat;
 }
 
 .mob-container {
-  margin-left: 40px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-close-btn {
   display: block;
   margin-left: auto;
+  background-color: transparent;
   border: none;
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  color: var(--accent-color);
 }
 
 .list {
@@ -456,7 +473,7 @@ background-repeat: no-repeat;
 }
 
 .mob-menu-list {
-  padding-bottom: 302px;
+  padding-bottom: 50px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -471,6 +488,19 @@ background-repeat: no-repeat;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+  transition: color var(--timing-function);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+}
+.mob-menu-link:hover, .mob-menu-link:focus {
+  color: var(--accent-color);
 }
 
 .mob-contacts-nav {
@@ -478,23 +508,41 @@ background-repeat: no-repeat;
 }
 
 .mob-tel-link {
+  display: block;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style: none;
   color: #2196F3;
 }
+@media screen and (min-width: 480px) {
+  .mob-tel-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
 
 .mob-mail-link {
+  display: block;
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   list-style: none;
   color: #757575;
+}
+@media screen and (min-width: 480px) {
+  .mob-mail-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mob-contacts-smartphone-item {
@@ -503,9 +551,8 @@ background-repeat: no-repeat;
 
 .mob-social-list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding-bottom: 48px;
-  position: relative;
 }
 
 .mob-social-item:not(:last-child) {

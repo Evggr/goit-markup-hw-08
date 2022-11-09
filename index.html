@@ -25,7 +25,7 @@
             >Web<span class="logo-header">Studio</span>
           </a>
 
-          <button type="button" class="menu-open-btn">
+          <button type="button" class="menu-open-btn" data-menu-open>
             <svg class="menu-open-icon" width="24" height="16">
               <use href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
@@ -61,12 +61,12 @@
         </ul>
       </div>
 
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" data-menu>
 
         <div class="mob-container">
          <div class="mob-menu-top">
-          <button type="button" class="menu-close-btn">
-            <svg class="menu-open-icon" width="19" height="19">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="30" height="30">
               <use href="./images/symbol-defs.svg#icon-close-black">
               </use>
             </svg>
@@ -690,7 +690,7 @@
       </div>
     </footer> -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18">
@@ -746,6 +746,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -112,9 +112,13 @@
 
 
 .menu-open-btn {
-  margin-left: 276px;
-  border-color: transparent;
-  background-color: #fff;
+  display: block;
+    margin-left: 276px;
+    background-color: transparent;
+    border: none;
+    @include tablet {
+      display: none;
+    }
 }
 
 .mob-menu {
@@ -125,36 +129,39 @@
   height:100%;
   z-index: 1;
   padding: 10px 0 10px 0;
-  // >.container {
-  //   height: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-    
-
-  // }
- 
 }
 
 .mob-container {
-  margin-left: 40px;
+  width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
 }
 
 .menu-close-btn {
   display: block;
-  margin-left: auto;
-  border: none;
-
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+  &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
 }
 
-.menu-open-icon {}
+.menu-open-icon {
+}
 
 .list {
    list-style: none;
 }
 
 .mob-menu-list {
-  padding-bottom: 302px;
+  padding-bottom: 50px;
 }
 
 
@@ -170,9 +177,24 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--primary-text-color);
+    transition: color var(--timing-function);
+
+    @include mobile {
+      font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+    &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
 }
 
-.current {}
+.mob-menu-bottom {
+
+}
 
 .mob-contacts {
   
@@ -187,24 +209,39 @@ padding-bottom: 64px;
 .item {}
 
 .mob-tel-link {
+  display: block;
 font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   text-decoration: none;
   list-style: none;
     color: #2196F3;
+      @include mobile {
+        font-weight: 500;
+          font-size: 24px;
+          line-height: 1.17;
+          letter-spacing: 0.02em;
+      }
 }
 
 .mob-mail-link {
+  display: block;
   font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height:1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
       list-style: none;
     color: #757575;
+    
+      @include mobile {
+        font-weight: 500;
+          font-size: 34px;
+          line-height: 1.17;
+          letter-spacing: 0.02em;
+      }
 }
 .mob-contacts-smartphone-item {
   padding-bottom: 32px;
@@ -212,10 +249,8 @@ font-weight: 500;
 
 .mob-social-list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding-bottom: 48px;
-  position: relative;
-  
 }
 
 .mob-social-item {
