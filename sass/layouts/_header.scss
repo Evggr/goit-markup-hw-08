@@ -13,6 +13,11 @@
   display: none;
   margin-left: 93px;
 
+  @include tablet {
+    display: flex;
+  }
+
+
   & .item:not(:last-child) {
     margin-right: 50px;
   }
@@ -62,6 +67,15 @@
   // display: flex;
     display: none;
   margin-left: auto;
+  @include tablet {
+      display: block;
+      margin-left: auto;
+    }
+
+    @include desktop {
+      display: flex;
+  
+    }
 
   & .item:not(:last-child) {
     margin-right: 50px;
@@ -76,6 +90,12 @@
 .mail-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.mail-item {
+  margin-bottom: 10px;
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .smartphone-icon {
@@ -113,7 +133,7 @@
 
 .menu-open-btn {
   display: block;
-    margin-left: 276px;
+    margin-left:auto;
     background-color: transparent;
     border: none;
     @include tablet {
@@ -152,10 +172,6 @@
       color: var(--accent-color);
     }
 }
-
-.menu-open-icon {
-}
-
 .list {
    list-style: none;
 }
@@ -192,21 +208,9 @@
       }
 }
 
-.mob-menu-bottom {
-
-}
-
-.mob-contacts {
-  
-}
-
 .mob-contacts-nav {
 padding-bottom: 64px;
 }
-
-.mob-contacts-mail-item {}
-
-.item {}
 
 .mob-tel-link {
   display: block;
@@ -220,7 +224,7 @@ font-weight: 500;
     color: #2196F3;
       @include mobile {
         font-weight: 500;
-          font-size: 24px;
+          font-size: 34px;
           line-height: 1.17;
           letter-spacing: 0.02em;
       }
@@ -229,7 +233,7 @@ font-weight: 500;
 .mob-mail-link {
   display: block;
   font-weight: 500;
-    font-size: 24px;
+    font-size: 5vw;
     line-height:1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -238,7 +242,7 @@ font-weight: 500;
     
       @include mobile {
         font-weight: 500;
-          font-size: 34px;
+          font-size: 24px;
           line-height: 1.17;
           letter-spacing: 0.02em;
       }
@@ -251,6 +255,7 @@ font-weight: 500;
   display: flex;
   gap: 10px;
   padding-bottom: 48px;
+  flex-wrap: wrap;
 }
 
 .mob-social-item {
