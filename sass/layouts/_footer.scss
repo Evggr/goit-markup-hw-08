@@ -117,10 +117,11 @@ margin-bottom: 60px;
   cursor: pointer;
   transition: var(--timing-function);
 
-  &-link:hover,
-  &-link:focus {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
   }
+
 }
 
 .action-icon {

@@ -4,13 +4,25 @@
 
 .button-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 
   // & .item:not(:last-child) {
   //   margin-right: 8px;
   // }
   gap: 8px;
+
+@include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .filters-title {
