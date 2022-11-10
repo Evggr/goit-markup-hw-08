@@ -108,11 +108,29 @@ html {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 768px) {
+  .modal-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+  }
+}
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #fff;
   border-radius: 4px;
   top: 50%;
@@ -120,6 +138,12 @@ html {
   transform: translate(-50%, -50%);
   transition: transform 500ms linear;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .is-hidden {
@@ -134,7 +158,7 @@ html {
 
 .modal-input {
   position: relative;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -148,6 +172,18 @@ html {
 }
 .modal-input:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .modal-input {
+    width: 370px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-input {
+    width: 448px;
+    height: 40px;
+  }
 }
 
 .modal-input-icon {
@@ -168,7 +204,7 @@ html {
 }
 
 .modal-comment {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -201,15 +237,39 @@ html {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (min-width: 768px) {
+  .modal-comment {
+    width: 370px;
+    height: 138px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-comment {
+    width: 448px;
+    height: 120px;
+  }
+}
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--title-text-color);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-text .check-wrap {
@@ -491,6 +551,10 @@ background-repeat: no-repeat;
 }
 .menu-close-btn:hover, .menu-close-btn:focus {
   color: var(--accent-color);
+}
+
+.menu-close-icon:hover, .menu-close-icon:focus {
+  fill: var(--accent-color);
 }
 
 .list {

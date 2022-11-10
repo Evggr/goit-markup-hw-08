@@ -13,12 +13,28 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-   margin-bottom:12px ;
+    margin-bottom:12px ;
+
+   @include tablet {
+  font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  @include desktop {
+ font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+  }
   }
   .modal {
     position: absolute;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: #fff;
     border-radius: 4px;
     top: 50%;
@@ -26,6 +42,11 @@
     transform: translate(-50%, -50%);
     transition: transform 500ms linear;
     padding: 40px;
+
+    @include desktop {
+      width: 528px;
+    min-height: 581px;
+    }
   }
 
   .is-hidden {
@@ -40,7 +61,7 @@
   
   .modal-input {
    position: relative;
-  width: 448px;
+  width: 370px;
    height: 40px;
    border:1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
@@ -54,6 +75,15 @@
 
    &:focus {
     border:1px solid var(--accent-color);
+    }
+
+    @include tablet {
+width: 370px;
+   height: 40px;
+    }
+    @include desktop {
+      width: 448px;
+   height: 40px;
     }
   }
   
@@ -78,7 +108,7 @@
   }
   
   .modal-comment {
-    width: 448px;
+    width: 370px;
     height: 120px;
     border:1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -100,16 +130,35 @@
               letter-spacing: 0.01em;
               color: rgba(117, 117, 117, 0.5);
             }
+
+    @include tablet {
+      width: 370px;
+    height: 138px;
+    }
+    @include desktop {
+    width: 448px;
+    height: 120px;
+    }
   }
   
   .check-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color:var(--title-text-color);
   display: flex;
   align-items:center;
   margin-bottom: 30px;
   justify-content: center;
+
+  @include tablet {
+  font-size: 12px;
+  line-height: 1.17;
+  }
+
+  @include desktop {
+ font-size: 14px;
+  line-height: 1.71;
+  }
   }
   
   .check-text .check-wrap {
