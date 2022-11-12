@@ -392,14 +392,13 @@ background-repeat: no-repeat;
   .main-nav {
     display: flex;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-nav {
     display: flex;
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -473,7 +472,7 @@ background-repeat: no-repeat;
 @media screen and (min-width: 1200px) {
   .auth-nav {
     display: flex;
-    margin-left: 315px;
+    margin-left: auto;
   }
 }
 .auth-nav .item:not(:last-child) {

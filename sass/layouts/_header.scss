@@ -6,13 +6,12 @@
   @include tablet {
     display: flex;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
   }
 
   @include desktop {
     display: flex;
   align-items: center;
+padding:0;
   }
 }
 
@@ -89,7 +88,7 @@
 
     @include desktop {
       display: flex;
-      margin-left: 315px;
+      margin-left: auto;
   
     }
 
