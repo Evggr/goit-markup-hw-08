@@ -3,11 +3,12 @@
   text-align: center;
 }
 
-.team .list {
+.team-list {
 display: flex;
   flex-wrap: wrap;
   // margin-right: -30px;
   gap: 30px;
+  list-style: none;
 }
 
 .team .card {
@@ -44,6 +45,21 @@ display: flex;
   margin-bottom: 10px;
 }
 
+.team-title {
+ font-weight: 700;
+font-size: 28px;
+line-height: 1.18;
+margin-bottom: 30px;
+
+ @include desktop {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+margin-bottom: 50px;
+  }
+}
+
+
 .title {
   font-weight: 500;
   font-size: 16px;
@@ -51,17 +67,22 @@ display: flex;
   margin-bottom: 10px;
 }
 
-.text {
+.team-text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
 
 .social-link-list {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @include desktop {
+    padding-bottom: 30px;
+  }
 }
 .social-link-item {
   width: 44px;
